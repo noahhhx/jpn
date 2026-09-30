@@ -1,4 +1,6 @@
 pub mod app;
+pub mod itinerary;
+pub mod trip;
 
 #[cfg(feature = "hydrate")]
 #[wasm_bindgen::prelude::wasm_bindgen]
