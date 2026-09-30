@@ -1,0 +1,7 @@
+target
+.devenv*
+.direnv
+.git
+.github
+Dockerfile
+docker-compose.yml

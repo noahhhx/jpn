@@ -1,0 +1,15 @@
+services:
+  jpn:
+    image: ghcr.io/noahhhx/jpn:latest
+    container_name: jpn
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower-jpn
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 300 jpn
