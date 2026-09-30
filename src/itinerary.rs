@@ -162,6 +162,9 @@ pub const DAYS: &[Day] = &[
                         "3-chōme-58-3 Ikebukuro, Toshima City, Tokyo 171-0014",
                         "",
                     ),
+                    image("/img/tokyo-station-ikebukuro-routes.webp", "Tokyo Station → Ikebukuro"),
+                    image("/img/tokyo-station-ikebukuro-marunouchi.webp", "Marunouchi line"),
+                    image("/img/tokyo-station-ikebukuro-yamanote.webp", "Yamanote line"),
                 ],
             },
         ],
@@ -234,6 +237,8 @@ pub const DAYS: &[Day] = &[
                         "Booking",
                         "https://e.japanticket.com/shops/muscle_girls/products/9682/?lang=en",
                     )]),
+                    image("/img/muscle-bar-ticket-1.webp", "Ticket 1"),
+                    image("/img/muscle-bar-ticket-2.webp", "Ticket 2"),
                 ],
             },
             Section {
@@ -292,7 +297,9 @@ pub const DAYS: &[Day] = &[
                 heading: "Train",
                 blocks: &[
                     Text("30 min train from the accommodation to Shinjuku (Yamanote line, green)."),
+                    image("/img/fuji-excursion-train.webp", "Fuji Excursion 7 · Shinjuku 08:30 → Kawaguchiko 10:26"),
                     Text("Use the green machine in any JR station and collect 2× tickets per person."),
+                    image("/img/fuji-train-ticket-qr.webp", "Ticket collection QR code"),
                     Text(
                         "Luggage: up to 2 bags each, free, no reservation needed. Each bag 250cm or less (h + w + d) and 30kg or less.",
                     ),
@@ -339,9 +346,11 @@ pub const DAYS: &[Day] = &[
                         "3647-1 Funatsu, Fujikawaguchiko, Minamitsuru District, Yamanashi 401-0301",
                         "Collect the car at 10am",
                     ),
+                    image("/img/toll-gates.webp", "Toll gate lanes and payment options"),
                     Text(
                         "5hr drive. If we can see Fuji, worth visiting Izu Panorama Park on the way.\nAdd a stop at Shurakuen Park at the 3hr mark for a walk and a break.",
                     ),
+                    image("/img/fuji-kyoto-drive.webp", "Fuji → Kyoto drive"),
                     place(
                         "Car drop-off",
                         "9 Nakatonoda-cho, Higashi 9-jo, Minami-ku, Kyoto",
@@ -428,6 +437,7 @@ pub const DAYS: &[Day] = &[
                 blocks: &[
                     Text("1.5hr train to Kobe. Aim to leave Kyoto at 2–3pm."),
                     Text("Fireworks festival at Meriken Park. More entertainment at Plenty Square (in front of Seishun-Chou Station)."),
+                    image("/img/kobe-fireworks-schedule.webp", "Schedule — fireworks at 18:30"),
                     Text(
                         "Follow the official \"Kobe Minato no Yoru\" Instagram (@kobehanabi) to get a commemorative holo card — first 200 people, from 17:00, at the Meriken Park Information Tent (west side of the Maritime Museum entrance).",
                     ),
@@ -553,10 +563,14 @@ pub const DAYS: &[Day] = &[
             },
             Section {
                 heading: "On the way",
-                blocks: &[List(&[item(
-                    "Ikoma Sanjo Amusement Park",
-                    "Sky Cycle — views in the sky on the way. Adds 30 mins.",
-                )])],
+                blocks: &[
+                    List(&[item(
+                        "Ikoma Sanjo Amusement Park",
+                        "Sky Cycle — views in the sky on the way. Adds 30 mins.",
+                    )]),
+                    image("/img/koyasan-drive.webp", "Kyoto → Ikoma → Koyasan"),
+                    image("/img/ikoma-sky-cycle.webp", "Sky Cycle"),
+                ],
             },
             Section {
                 heading: "Temple stay",
@@ -566,6 +580,7 @@ pub const DAYS: &[Day] = &[
                         "700 Kōyasan, Koya, Ito District, Wakayama 648-0211",
                         "2.5hr drive · check-in between 15:00 and 16:00",
                     ),
+                    image("/img/koyasan-temple-parking.webp", "Parking — 8 slots beside the temple"),
                     Schedule(&[
                         step("17:00", "Asokukan meditation", ""),
                         step("18:00", "Dinner", ""),
@@ -592,15 +607,18 @@ pub const DAYS: &[Day] = &[
             },
             Section {
                 heading: "Suggested activities",
-                blocks: &[List(&[
-                    item("Use the car to get to places that are harder to reach by train", ""),
-                    item("Katsura River", ""),
-                    item("Kyoto City Rakusai Bamboo Park", ""),
-                    item("Matsunoo-taisha (Matsuo-taisha) Shrine", ""),
-                    item("Arashiyama Monkey Park Iwatayama", ""),
-                    item("Bread, Espresso and Arashiyama Garden", "Bakery"),
-                    item("Otagi Nenbutsu-ji Temple", "Rakan statues"),
-                ])],
+                blocks: &[
+                    List(&[
+                        item("Use the car to get to places that are harder to reach by train", ""),
+                        item("Katsura River", ""),
+                        item("Kyoto City Rakusai Bamboo Park", ""),
+                        item("Matsunoo-taisha (Matsuo-taisha) Shrine", ""),
+                        item("Arashiyama Monkey Park Iwatayama", ""),
+                        item("Bread, Espresso and Arashiyama Garden", "Bakery"),
+                        item("Otagi Nenbutsu-ji Temple", "Rakan statues"),
+                    ]),
+                    image("/img/otagi-nenbutsuji.webp", "Otagi Nenbutsu-ji statues"),
+                ],
             },
         ],
     },
@@ -640,6 +658,7 @@ pub const DAYS: &[Day] = &[
                 blocks: &[
                     Note("Check at Kyoto Station if they can send our bags to Yufuin!"),
                     Text("Size = h + w + d. 160 size = £30."),
+                    image("/img/yamato-luggage-prices.webp", "Yamato Transport prices"),
                     List(&[
                         item("7-Eleven", "Partners with Yamato Transport"),
                         item(
@@ -727,12 +746,15 @@ pub const DAYS: &[Day] = &[
                         "15 min walk to the park near the castle for lunch. Okonomiyaki (savoury pancake) originated here.",
                     ),
                     Text("Hiroshima → Hakata"),
+                    image("/img/hiroshima-hakata-trains.webp", "Hiroshima → Hakata shinkansen"),
+                    Text("Hakata → Yufuin — booked, pending confirmation."),
+                    image("/img/hakata-yufuin-train.webp", "Yufuin no Mori 5 · Hakata 14:38 → Yufuin 16:50"),
                 ],
             },
             Section {
                 heading: "Accommodation",
                 blocks: &[
-                    Text("Booked, pending confirmation. The ryokan is a 15 min walk from the station."),
+                    Text("The ryokan is a 15 min walk from the station."),
                     place(
                         "Yufuin Bath Satoyamasafu",
                         "828番地1 Yufuinchō Kawaminami, Yufu, Oita 879-5103",
@@ -824,6 +846,7 @@ pub const DAYS: &[Day] = &[
                         "Ropeway info",
                         "https://japantravel.navitime.com/en/area/jp/spot/02301-13800174/",
                     )]),
+                    image("/img/kyushu-shochu-kan.webp", "Kyushu Shochu-Kan, by the ropeway car park"),
                 ],
             },
             Section {
@@ -873,6 +896,7 @@ pub const DAYS: &[Day] = &[
                         "Au Kurokawa, building C",
                     ),
                     place("Nabegataki Falls", "Kurobuchi, Oguni, Aso District, Kumamoto", ""),
+                    image("/img/aso-crater-map.webp", "Mt Aso crater area"),
                     Links(&[
                         link("Au Pan & Coffee", "https://www.instagram.com/aupan_coffee/"),
                         link("Nabegataki Falls guide", "https://www.journeyera.com/nabegataki-falls/"),
@@ -896,6 +920,7 @@ pub const DAYS: &[Day] = &[
                         link("Mt Aso hike", "https://www.japan-guide.com/e/e4552.html"),
                         link("Trail map", "https://yamap.com/mountains/14169"),
                     ]),
+                    image("/img/aso-trail-map.webp", "Trail map"),
                 ],
             },
         ],
@@ -1028,6 +1053,7 @@ pub const DAYS: &[Day] = &[
                         "3-1-11 Tatekawa, Sumida-ku, Tokyo",
                         "4 min walk from the apartment",
                     ),
+                    image("/img/sumo-dinner-qr.webp", "Booking QR code"),
                     Schedule(&[
                         step("18:45", "Open for entry", ""),
                         step("19:00", "Opening", "About sumo"),
@@ -1091,8 +1117,9 @@ pub const DAYS: &[Day] = &[
                 Text(
                     "Check out at 10am. Need to find somewhere to store bags.\nLeave the accommodation around 2pm to get to the airport for 3:30–4pm. Can get the train or bus back.",
                 ),
-                image("/img/return-flights.webp", "Return flights"),
-                image("/img/return-flights-times.webp", "Return flight times"),
+                image("/img/air-china-flights.webp", "Air China · Narita 19:30 → Gatwick 06:55 +1"),
+                image("/img/return-flights.webp", "BA 006 · Haneda 13:15 → Heathrow 19:10"),
+                image("/img/return-flights-times.webp", "NH160 · Haneda 22:55 → New York JFK 21:50"),
             ],
         }],
     },
