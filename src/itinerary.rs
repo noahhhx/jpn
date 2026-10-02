@@ -29,41 +29,51 @@ pub const DAYS: &[Day] = &[
                     Text(
                         "Leave the M23 at Junction 9, signposted for Gatwick Airport. Go straight through the first roundabout (signposted Redhill A23) and then at the next roundabout take the 4th exit towards Redhill A23. At the next roundabout take the first exit past the Esso service station and turn on to Povey Cross Road. The Travelodge is on the left hand side.",
                     ),
-                    Text(
-                        "North Terminal pick-up point is outside the terminal from the Pick-Up zone. Gatwick Hoppa buses also run a regular shuttle to and from the airport — £5.25 per adult.",
-                    ),
                 ],
             },
             Section {
                 heading: "Parking",
                 blocks: &[
                     place(
-                        "Gatwick Holiday Parking",
-                        "Gatwick Holiday Parking, Larkins Road, Gatwick",
+                        "North Terminal Long Stay",
+                        "North Terminal Long Stay car park, Gatwick Airport",
                         "Booked from Wed 14 Oct 20:30 to Mon 9 Nov 09:00",
                     ),
                     List(&[
-                        item("From London or Brighton, exit the M23 at Junction 9", ""),
+                        item(
+                            "From London or Brighton, exit the M23 at Junction 9",
+                            "Follow signs for London Gatwick",
+                        ),
                         item("At the first roundabout, follow signs for the North Terminal", ""),
                         item(
-                            "At the second roundabout, continue straight towards the Long Stay car parks",
+                            "At the next roundabout, take the third exit towards the Long Stay car park",
                             "",
                         ),
                         item(
-                            "Go past the Shell petrol station and follow the road signs to Gatwick Holiday Parking",
-                            "",
+                            "Go past the petrol station on your right",
+                            "Take the third exit at the next small roundabout",
+                        ),
+                        item(
+                            "Follow the road for about a mile to the next roundabout",
+                            "Turn right into the North Terminal Long Stay car park",
                         ),
                     ]),
+                    Text(
+                        "Pull up to the entry barrier and wait a few seconds for it to read the registration number — the barrier lifts when it's recognised. No ticket is issued, and the car is recognised again on the way out.",
+                    ),
                     Note(
-                        "Do not enter the official London Gatwick Long Stay car park by mistake — you may be charged extra. At the Long Stay entrance roundabout keep following signs to Gatwick Holiday Parking, a further 0.6 miles ahead.",
+                        "If the booking isn't recognised, press the intercom and they can issue a ticket linked to the booking.",
                     ),
                     Text(
                         "Free shuttle buses run every 15 minutes from the car park and take around 7 minutes to reach the North Terminal.",
                     ),
                     List(&[
                         item("Drop-off (departure)", "North Terminal, bus stop 10"),
-                        item("Pick-up (return)", "North Terminal, bus stop 3"),
+                        item("Pick-up (return)", "North Terminal lower forecourt, bus stop 3"),
                     ]),
+                    Text(
+                        "From the North Terminal, the Gatwick Hoppa to the hotel leaves from bus stop 11 on Furlong Way, about a five minute walk from the arrivals level.",
+                    ),
                 ],
             },
         ],
@@ -113,7 +123,7 @@ pub const DAYS: &[Day] = &[
             Section {
                 heading: "",
                 blocks: &[Text(
-                    "Land at Terminal 1, South Wing. Wait for Jack to arrive at 14:30.",
+                    "Land at Terminal 1, South Wing. Wait for Jack to arrive at 14:30 (UA079).",
                 )],
             },
             Section {
@@ -218,6 +228,7 @@ pub const DAYS: &[Day] = &[
                     ),
                     item("Shinjuku Golden-Gai", "Narrow alleyways with bars"),
                     item("Hanazono Shrine", ""),
+                    item("阿吽 Aun Craft Antique", "¥500 sake cup machine"),
                 ])],
             },
             Section {
@@ -266,6 +277,7 @@ pub const DAYS: &[Day] = &[
             heading: "Suggested activities",
             blocks: &[List(&[
                 item("Shibuya", ""),
+                item("阿吽 Aun Craft Antique", "¥500 sake cup machine"),
                 item("Meiji Jingu", "Shrine"),
                 item("Harajuku", "Good for cafes and fashion"),
                 item("Sodateru Towel shop", ""),
@@ -747,8 +759,16 @@ pub const DAYS: &[Day] = &[
                     ),
                     Text("Hiroshima → Hakata"),
                     image("/img/hiroshima-hakata-trains.webp", "Hiroshima → Hakata shinkansen"),
-                    Text("Hakata → Yufuin — booked, pending confirmation."),
-                    image("/img/hakata-yufuin-train.webp", "Yufuin no Mori 5 · Hakata 14:38 → Yufuin 16:50"),
+                    Note("Hakata → Yufuin train is booked — can't miss it! Collection code: 09992026764"),
+                    image("/img/yufuin-train-qr.webp", "Reservation no. 43833"),
+                    image(
+                        "/img/hakata-yufuin-train.webp",
+                        "Yufuin no Mori 5 · Hakata 14:38 → Yufuin 16:50 · platform 6",
+                    ),
+                    Links(&[link(
+                        "How to collect tickets",
+                        "https://www.klook.com/en-GB/notice_content/27255/?from_source=email&from_medium=system_email&from_campaign=mob_ptp_voucher",
+                    )]),
                 ],
             },
             Section {
@@ -1130,7 +1150,7 @@ pub const DAYS: &[Day] = &[
         sections: &[Section {
             heading: "",
             blocks: &[Text(
-                "Parking shuttle pick-up from North Terminal bus stop 3. Parking is booked until 09:00.",
+                "Parking shuttle pick-up from the North Terminal lower forecourt, bus stop 3. Parking is booked until 09:00.",
             )],
         }],
     },
