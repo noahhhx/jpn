@@ -8,3 +8,6 @@ devenv.local.yaml
 
 # direnv
 .direnv
+
+# Itinerary doc snapshot from the last site sync (see .claude/skills/sync-itinerary)
+.itinerary-sync
